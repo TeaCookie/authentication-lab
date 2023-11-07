@@ -1,0 +1,14 @@
+1. By default drf uses session auth, it stores the session in cookies which are managed by the server. 
+You can set the setting in settings.py under default authentication classes.
+It stores each session inside the database with expire_date and their keys.
+
+2. Httpie uses basic auth because you put the username and password in the header.
+
+3. In session auth, the server was handling the session. There is information stored on the server side. Stateful.
+In token auth, the server didn't need to store anything, Stateless.
+
+4. When you click Log in with Google you grant authorization to the client (bitbucket.org)
+The client then sends a authorization request to Google authentication API which then returns a token
+The client then uses that token to request data about "ME" from Google's database.
+
+5. https://github.com/TeaCookie/authentication-lab.git
